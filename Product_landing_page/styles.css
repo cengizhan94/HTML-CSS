@@ -1,6 +1,85 @@
-html{
+*{
     padding: 0 ;
     margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper{
+    position: relative;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    top: 0;
+    min-height: 200px;
+    padding: 0 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+}
+@media(max-width: 600px){
+    header{
+        flex-wrap: wrap;
+    }
+}
+.logo-wrap > img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+@media(max-width:650px){
+    .logo-wrap > img{
+        margin: 0 auto;
+    }
+}
+
+#hero{
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px; 
+}
+
+@media(media-width: 650){
+    #hero{
+        margin-top: 120px;
+    }
+}
+
+
+
+video{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 200px;
 }
 
 .logo-wrap{
@@ -14,13 +93,7 @@ html{
     font-size: 100px;
     font-weight: bold;
     color: #fff;
-    text-shadow: 0 0 10px #000;
-    z-index: 1;
     position: relative;
     overflow: hidden;
     background: #000;
-    background: -moz-linear-gradient(top,  #000 0%, #000 100%);
-    background: -webkit-linear-gradient(top,  #000 0%,#000 100%);
-    background: linear-gradient(to bottom,  #000 0%,#000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
 }
