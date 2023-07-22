@@ -94,11 +94,28 @@ h2{
 }
 
 #video-container{
-    text-align: cenetr;
+    text-align: center;
     margin: 30px auto;
     max-width: 600px;
 }
 
+.row{
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+#guitar{
+    margin: auto;
+    width: 200px;
+}
+#violin{
+    margin: auto;
+    width: 250px;
+}
+#piano{
+    margin: auto;
+    width: 290px;
+}
 @media(media-width: 768px){
     .navbar-nav{
         margin-top: 10px;
