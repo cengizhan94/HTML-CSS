@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div id="page-wrapper" class="">
+    <div id="page-wrapper">
         <header class="bg-dark" id="header">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav id="nav-bar" class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Music & Organization</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,33 +26,35 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#header">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Chose Own Enstrument</a>
+                                <a class="nav-link" href="#video-container">Listen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#products">Products</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#products" target="_blank" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Categories
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://www.amazon.com.tr/s?k=keman&__mk_tr_TR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1YH773WEJSUBA&sprefix=kem%2Caps%2C376&ref=nb_sb_noss_2" target="_blank" ><i class="fa-solid fa-violin"></i>
+                                    <li><a class="dropdown-item" href="#products">
+                                            <i class="fa-solid fa-violin"></i>
                                             Violins</a></li>
-                                    <li><a class="dropdown-item" href="https://www.amazon.com.tr/s?k=piano&__mk_tr_TR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=30NXHJYB3K8SY&sprefix=piano%2Caps%2C150&ref=nb_sb_noss_1" target="_blank" ><i class="fa-solid fa-piano"></i>
+                                    <li><a class="dropdown-item nav-link" href="#products"><i
+                                                class="fa-solid fa-piano"></i>
                                             Piano & Org </a></li>
-                                    <li><a class="dropdown-item" href="https://www.amazon.com.tr/s?k=gitar&__mk_tr_TR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23IWAQIVK2V24&sprefix=gita%2Caps%2C155&ref=nb_sb_noss_2" target="_blank" ><i class="fa-solid fa-guitar"></i>
+                                    <li><a class="dropdown-item" href="#products"><i class="fa-solid fa-guitar"></i>
                                             Guitar</a></li>
-                                    <li><a href="https://www.amazon.com.tr/s?k=drum&__mk_tr_TR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23E714LT3FJBN&sprefix=drum%2Caps%2C150&ref=nb_sb_noss_1" target="_blank"  class="dropdown-item"><i class="fa-solid fa-drum"></i>
+                                    <li><a href="#products" class="dropdown-item"><i class="fa-solid fa-drum"></i>
                                             Drum Batery</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Home</a>
-                            </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
@@ -101,27 +103,33 @@
             </div>
             <h2><i class="fa-solid fa-user"></i>Create Your Account</h2>
             <div class="form-container">
-                <form action="https://www.freecodecamp.com/email-submit" target="_blank">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"><i class="fa-solid fa-envelope"></i>Email
                             address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <input id="email" 
+                        type="email" 
+                        name="email"
+                        class="form-control" aria-describedby="emailHelp" required
+                        placeholder="Email">
                         <div id="emailHelp" class="form-text"><i class="fa-solid fa-shield-halved"></i> We'll never
                             share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label"><i
                                 class="fa-solid fa-user-secret"></i>Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        <input type="password" class="form-control" id="exampleInputPassword1" required
+                            placeholder="Password">
                     </div>
                     <button type="submit" class="btn btn-secondary">Submit</button>
                 </form>
             </div>
         </section>
         <section id="video-container">
-            <iframe width="320" height="240" src="https://www.youtube.com/embed/StfwZUc2DaQ" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video" width="620" height="340" src="https://www.youtube.com/embed/StfwZUc2DaQ" frameborder="0"
+                allowfullscreen></iframe>
         </section>
-        <section class="row">
+        <section id="products" class="row">
             <div class="col-sm-4">
                 <div class="card text-center mb-3" style="width: 18rem;">
                     <img id="guitar" src="product-guitar.jpg" class="card-img-top" alt="guitar">

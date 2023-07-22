@@ -14,14 +14,15 @@ body{
     color: #fff;
     padding: 10px;
 }
-.navbar{
-    padding:4px;
-}
-.navbar-brand{
-    font-size: 1.5rem;
-}
-.nav-item{
-    margin-right: 15px;
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    z-index: 100;
 }
 
 #page-wrapper{
@@ -54,13 +55,7 @@ a{
     text-align: center;
     margin-bottom: 10px;
 }
-.form-control{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 .logo-wrap{
    text-align: left;
    position: relative;
@@ -68,7 +63,8 @@ a{
    left: 0px;
 }
 #logo{
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 0;
     padding-left: 0;
 
 }
